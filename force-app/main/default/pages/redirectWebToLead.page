@@ -1,0 +1,15 @@
+<apex:page controller="WebToLeadController">
+    <script>
+        // Get the Lead ID from the URL passed from the Apex controller
+        var leadId = "{!leadId}";
+        // If Lead ID is available, redirect the user to the Lead detail page
+        if (leadId) {
+            window.location.href = "/" + leadId;
+           console.log("lEAD ID: ",leadId);
+		// Redirect to the Lead detail page
+        } else {
+            alert('Lead ID not found.');
+        }
+    </script>
+    <h2>Redirecting to the created Lead...</h2>
+</apex:page>

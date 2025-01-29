@@ -1,0 +1,97 @@
+<apex:page controller="WebToLeadController">
+    <style>
+        /* Styling for the form */
+        form {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 768px) {
+            form {
+                width: 95%;
+                padding: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            select {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- Form for capturing Lead details -->
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type="hidden" name="oid" value="00DNS000008k65p" />
+        <input type="hidden" name="retURL" value="https://resourceful-panda-7ne2s-dev-ed--c.trailblaze.vf.force.com/apex/redirectWebToLead" /> <!-- Redirect URL after form submission -->
+
+        <!-- Customer Details -->
+        <label for="first_name">First Name</label>
+        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="required" /><br />
+
+        <label for="last_name">Last Name</label>
+        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required="required" /><br />
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="email" required="required" /><br />
+
+        <label for="company">Company</label>
+        <input id="company" maxlength="40" name="company" size="20" type="text" required="required" /><br />
+
+        <label for="city">City</label>
+        <input id="city" maxlength="40" name="city" size="20" type="text" required="required" /><br />
+
+        <label for="state">State/Province</label>
+        <input id="state" maxlength="20" name="state" size="20" type="text" required="required" /><br />
+
+        <!-- Dynamic Campaign Picklist -->
+
+
+        <!-- Lead Source -->
+        <label for="lead_source">Lead Source</label>
+        <select id="lead_source" name="lead_source">
+            <option value="">--None--</option>
+            <option value="Web">Web</option>
+            <option value="Phone Inquiry">Phone Inquiry</option>
+            <option value="Partner Referral">Partner Referral</option>
+            <option value="Purchased List">Purchased List</option>
+            <option value="Other">Other</option>
+        </select><br />
+
+        <!-- Submit Button -->
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</apex:page>
