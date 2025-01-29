@@ -1,4 +1,4 @@
-# 🌐 Web-To-Lead Form - Lightning Web Component (LWC) 💼
+# 🌐 Web-To-Lead Form - LWC 💼
 
 Welcome to the **Web-To-Lead Form** project! This project utilizes **Salesforce Lightning Web Components (LWC)** to create a user-friendly, dynamic lead capture form. The form integrates seamlessly with Salesforce, capturing lead data and automatically managing leads through campaigns, as well as assigning leads based on state. This form is designed to enhance the efficiency of lead management processes within Salesforce.
 
