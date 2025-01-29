@@ -139,6 +139,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or need further assistance, feel free to contact me:
 
 - **Email**: [kislay.tech@gmail.com](mailto:kislay.tech@gmail.com)
-- **LinkedIn**: [Kislay Kumar](https://www.linkedin.com/in/kislay-kumar)
+- **LinkedIn**: [Kislay Kumar](https://www.linkedin.com/in/kislay-kumar-kk/)
 
 ---
