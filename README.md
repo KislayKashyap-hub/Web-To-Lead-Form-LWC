@@ -5,14 +5,13 @@ Welcome to the **Web-To-Lead Form** project! This project utilizes **Salesforce 
 ---
 
 ## 🚀 Features
-
 - 🌟 **Dynamic Form Fields**: Collect lead details such as name, email, company, phone number, and other custom fields.
 - 🔄 **Real-Time Data Submission**: Automatically submits lead data to Salesforce when the form is filled out.
 - 📊 **Seamless Salesforce Integration**: Integrates directly with Salesforce to create, store, and manage leads.
 - 🖥️ **Responsive Design**: Optimized for both desktop and mobile views.
 - 💡 **Customizable Styling**: Use included CSS to adjust the form's appearance.
 - 📢 **Automatically Add Campaign Members**: Each lead created via the form is automatically added to a specified campaign.
-- 🌍 **Assign Leads Based on State**: Leads are assigned to the appropriate Salesforce user based on the state they are located in, ensuring proper ownership.
+- 🌍 **Assign Leads Based on State**: Leads are assigned to the appropriate Salesforce user based on their location. For example, leads from specific states like Maharashtra, Goa, etc., will be assigned to **Kislay Kumar**, while leads from other states will be assigned to **Sale Manager**.
 
 ---
 
@@ -61,7 +60,8 @@ Once the form is deployed and added to your Salesforce Lightning page:
 
 1. **Fill out the form**: The lead's details such as name, email, company, and phone number are entered.
 2. **Submit the form**: The lead data is automatically captured upon submission and a new lead record is created in Salesforce.
-3. **Automatic Lead Assignment**: Based on the state provided in the form, the lead will be assigned to the appropriate Salesforce user.
+3. **Automatic Lead Assignment**: Based on the state provided in the form, the lead will be assigned to the appropriate Salesforce user. 
+For instance, leads from Maharashtra, Goa, Gujarat, and other states will be assigned to **Kislay Kumar**, while others will be assigned to **Sale Manager**.
 4. **Campaign Membership**: The lead is also automatically added to a predefined campaign in Salesforce.
 5. **Real-Time Confirmation**: Upon successful submission, the user receives a success message; otherwise, an error message is shown.
 5. **Re-Direct to Created Lead**: Automatically, the lead will redirect to the Lead Record Page.
