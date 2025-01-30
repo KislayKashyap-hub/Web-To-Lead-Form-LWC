@@ -1,6 +1,5 @@
 <template>
-    
-    <lightning-card title="🚀 Get in Touch - Great Indian Sale" class="custom-card">
+    <lightning-card title="🚀 Get in Touch - Indian Sale" class="custom-card">
         <div class="form-container">
             <div class="slds-grid slds-wrap">
                 <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
@@ -16,10 +15,23 @@
                     <lightning-input label="Company" name="company" required onchange={handleChange}></lightning-input>
                 </div>
                 <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
-                    <lightning-input label="City" name="city" onchange={handleChange}></lightning-input>
+                    <lightning-combobox 
+                        label="City" 
+                        name="city" 
+                        value={city} 
+                        options={cityOptionsForSelectedState} 
+                        onchange={handleChange}>
+                    </lightning-combobox>
                 </div>
                 <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
-                    <lightning-input label="State" name="state" required onchange={handleChange}></lightning-input>
+                    <lightning-combobox 
+                        label="State" 
+                        name="state" 
+                        required 
+                        value={state} 
+                        options={stateOptions} 
+                        onchange={handleChange}>
+                    </lightning-combobox>
                 </div>
                 <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
                     <lightning-combobox
@@ -50,3 +62,4 @@
         </div>
     </lightning-card>
 </template>
+
